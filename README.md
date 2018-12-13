@@ -16,11 +16,10 @@ Use this repository for when you want to start a new modular JavaScript applicat
 
 The `npm start` command will run grunt for you.
 
-The web server will be started, and the JavaScript code in the `src/scripts` directory will be compiled into `public/hellogoodbye.js`.
+The web server will be started, and the JavaScript code in the `src/scripts` directory will be compiled into `public/bundle.js`.
 
 1. Open Chome and make sure your developer tools are open.
 1. Open [http://localhost:8080](http://localhost:8080) in your browser.
 1. You should see the following output in the console.
 
 ![sample boilerplate output](./browserify-boilerplate-output.png)
-
