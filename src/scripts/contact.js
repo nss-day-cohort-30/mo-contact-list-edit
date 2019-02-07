@@ -1,3 +1,4 @@
+//function returns the html to represent the contact, accepts a function as an argument
 const contact = (contactObject) => { return `
 <section>
     <h3>${contactObject.name}</h3>
@@ -5,4 +6,5 @@ const contact = (contactObject) => { return `
     <div>${contactObject.email}</div>
     </section>`
 }
+//exports the contact function
 export default contact
