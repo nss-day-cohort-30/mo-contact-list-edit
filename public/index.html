@@ -3,13 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Browserify Boilerplate</title>
+    <title>Contact Challenge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <article class="output">
+    <h1>New Contact</h1>
+    <form id="contactForm">
+        <label for="name">Name: </label>
+        <input id="name" type="text">
+        <label for="name">Phone: </label>
+        <input id="phone" type="text" placeholder="555-1234">
+        <label for="name">Email: </label>
+        <input id="email" type="text">
+        <button id="button">Store it!</button>
+    </form>
 
-    </article>
+
+    <section id="contactList"></section>
 
     <script src="bundle.js"></script>
 </body>

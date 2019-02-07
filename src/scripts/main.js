@@ -1,8 +1,8 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
+import contactCollection from "./contactCollection"
+import contactForm from "./contactForm"
+import contactList from "./contactList"
 
-sayHello()
-sayGoodbye()
+document.getElementById("button").addEventListener("click", contactForm)
+console.log(contactCollection.get())
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
+contactList()
