@@ -8,9 +8,9 @@ const contactForm = () => {
     const email = document.getElementById("email").value
     //creates an object with the user input as key values
     const contactObject = {
-            name: name,
-            phone: phone,
-            email: email
+        name: name,
+        phone: phone,
+        email: email
     }
     //invokes the post method on the contactCollection object and passes it the newly created contact object
     contactCollection.Post(contactObject)
