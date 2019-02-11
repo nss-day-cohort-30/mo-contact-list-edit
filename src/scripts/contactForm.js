@@ -1,5 +1,6 @@
 //imports the contactCollection object
 import contactCollection from "./contactCollection"
+import contactList from "./contactList"
 
 const contactForm = () => {
     //adds event listener to the button
@@ -14,8 +15,24 @@ const contactForm = () => {
             phone: phone,
             email: email
         }
-        //invokes the post method on the contactCollection object and passes it the newly created contact object
-        contactCollection.Post(contactObject)
+
+        // Get value of hidden input field
+        const id = document.getElementById("contactId").value
+
+        // If it has a non-blank value, we're editing
+        if (id !== "") {
+            // Edit the thing
+            contactCollection.Put(id, contactObject).then(
+                () => {
+                    document.getElementById("contactId").value = ""
+                    contactList()
+                }
+            )
+        } else {
+            //invokes the post method on the contactCollection object and passes it the newly created contact object
+            contactCollection.Post(contactObject)
+        }
+
     })
 }
 //exports the contactForm function
