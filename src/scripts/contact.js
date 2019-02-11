@@ -1,4 +1,4 @@
-//function returns the html to represent the contact, accepts a function as an argument
+//function returns the html to represent the contact, as well as delete button, accepts a function as an argument
 const contact = (contactObject) => {
     return `
         <section>
