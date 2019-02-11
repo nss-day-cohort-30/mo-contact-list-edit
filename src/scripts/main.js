@@ -4,7 +4,7 @@ import contactForm from "./contactForm"
 import contactList from "./contactList"
 
 //adds event listener to the button. On click evokes the contactForm function
-document.getElementById("button").addEventListener("click", contactForm)
+contactForm()
 
 
 contactList()

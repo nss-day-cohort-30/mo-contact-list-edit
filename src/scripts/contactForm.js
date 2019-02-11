@@ -2,6 +2,8 @@
 import contactCollection from "./contactCollection"
 
 const contactForm = () => {
+    //adds event listener to the button
+    document.getElementById("button").addEventListener("click", () => {
     //captures the user input values
     const name = document.getElementById("name").value
     const phone = document.getElementById("phone").value
@@ -14,6 +16,7 @@ const contactForm = () => {
     }
     //invokes the post method on the contactCollection object and passes it the newly created contact object
     contactCollection.Post(contactObject)
+})
 }
 //exports the contactForm function
 export default contactForm
