@@ -2,6 +2,7 @@
 import contact from "./contact"
 //imports contactCollection object from contact collection
 import contactCollection from "./contactCollection"
+import contactDelete from "./contactDelete";
 
 
 const contactList = () => {
@@ -9,10 +10,12 @@ const contactList = () => {
     contactCollection.get()
         .then(
             (parsedInfo) => {
+                 //refrence to the contact list element
+                 let contactListEl = document.getElementById("contactList")
+                contactListEl.innerHTML = ""
                 //loops over the array
                 parsedInfo.forEach((currentObject) => {
-                    //refrence to the contact list element
-                    let contactListEl = document.getElementById("contactList")
+
                     //pased each object to the contact function (builds the HTML)
                     let contactHTML = contact(currentObject)
                     //injected the HTML into the DOM
@@ -20,6 +23,7 @@ const contactList = () => {
                 })
             }
         )
+
 }
 
 //exports the contactList function

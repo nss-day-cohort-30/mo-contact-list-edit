@@ -1,5 +1,11 @@
 //creates an object with TWO keys, each is a method
 const contactCollection = {
+    delete: (contactId) => {
+        return fetch(`http://127.0.0.1:8088/contacts/${contactId}`, {
+                method: "DELETE"
+        })
+
+  },
     //gets the contact array and parses the json
     get: function () {
         return fetch("http://localhost:8088/contacts")

@@ -5,6 +5,7 @@ const contact = (contactObject) => {
             <h3>${contactObject.name}</h3>
             <div>${contactObject.phone}</div>
             <div>${contactObject.email}</div>
+            <button id="deleteButton--${contactObject.id}">Delete ${contactObject.name}</button>
         </section>`
 }
 //exports the contact function
