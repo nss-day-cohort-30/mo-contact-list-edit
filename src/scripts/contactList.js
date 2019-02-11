@@ -2,7 +2,7 @@
 import contact from "./contact"
 //imports contactCollection object from contact collection
 import contactCollection from "./contactCollection"
-import contactDelete from "./contactDelete";
+
 
 
 const contactList = () => {

@@ -6,6 +6,7 @@ const contact = (contactObject) => {
             <div>${contactObject.phone}</div>
             <div>${contactObject.email}</div>
             <button id="deleteButton--${contactObject.id}">Delete ${contactObject.name}</button>
+            <button id="editButton--${contactObject.id}">Edit ${contactObject.name}</button>
         </section>`
 }
 //exports the contact function

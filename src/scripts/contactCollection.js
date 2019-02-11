@@ -6,6 +6,12 @@ const contactCollection = {
                 method: "DELETE"
         })
   },
+    getContact: (contactId) => {
+        return fetch (`http://127.0.0.1:8088/contacts/${contactId}`)
+            .then(response => response.json()
+            )
+    },
+
     //gets the contact array and parses the json
     get: function () {
         return fetch("http://localhost:8088/contacts")
