@@ -1,10 +1,111 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "steve",
+      "password": "chickenmonkey",
+      "firstName": "Steve",
+      "lastName": "Brownlee"
+    },
+    {
+      "username": "foo",
+      "password": "bar",
+      "firstName": "Foo",
+      "lastName": "Bar",
+      "id": 2
+    },
+    {
+      "username": "po",
+      "password": "po",
+      "firstName": "po",
+      "lastName": "po",
+      "id": 3
+    },
+    {
+      "username": "op",
+      "password": "op",
+      "firstName": "op",
+      "lastName": "op",
+      "id": 4
+    },
+    {
+      "username": "ok",
+      "password": "ok",
+      "firstName": "ok",
+      "lastName": "ok",
+      "id": 5
+    },
+    {
+      "username": "jk",
+      "password": "jk",
+      "firstName": "jk",
+      "lastName": "jk",
+      "id": 6
+    },
+    {
+      "username": "up",
+      "password": "up",
+      "firstName": "up",
+      "lastName": "up",
+      "id": 7
+    },
+    {
+      "username": "do",
+      "password": "do",
+      "firstName": "do",
+      "lastName": "do",
+      "id": 8
+    },
+    {
+      "username": "ut",
+      "password": "ut",
+      "firstName": "ut",
+      "lastName": "ut",
+      "id": 9
+    },
+    {
+      "username": "mn",
+      "password": "mn",
+      "firstName": "mn",
+      "lastName": "mn",
+      "id": 10
+    }
+  ],
   "contacts": [
     {
+      "userId": 1,
       "name": "Steve Pop",
       "phone": "6152410666",
       "email": "steve@stevebrownlee.com",
       "id": 1
+    },
+    {
+      "name": "po",
+      "phone": "po",
+      "email": "po",
+      "userId": 7,
+      "id": 2
+    },
+    {
+      "name": "mo",
+      "phone": "mo",
+      "email": "mo",
+      "userId": 8,
+      "id": 3
+    },
+    {
+      "name": "bu",
+      "phone": "bu",
+      "email": "bu",
+      "userId": 9,
+      "id": 4
+    },
+    {
+      "name": "hu",
+      "phone": "hu",
+      "email": "hu",
+      "userId": 10,
+      "id": 5
     }
   ]
 }

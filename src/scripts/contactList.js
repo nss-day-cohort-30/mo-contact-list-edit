@@ -7,7 +7,8 @@ import contactCollection from "./contactCollection"
 
 const contactList = () => {
     //invokes the .get method on the imported object
-    contactCollection.get()
+    const userId = document.getElementById("userId").value
+    contactCollection.getForUser(userId)
         .then(
             (parsedInfo) => {
                  //refrence to the contact list element
